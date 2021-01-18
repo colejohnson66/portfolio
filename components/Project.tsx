@@ -12,7 +12,7 @@ type ProjectProps = {
     name: string;
     imgSrc: string;
     imgAlt: string;
-    children: React.ReactChild;
+    children: JSX.Element | JSX.Element[];
     buttons: ProjectButton[];
 };
 
