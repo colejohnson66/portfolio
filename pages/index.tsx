@@ -3,6 +3,14 @@ import { Button, Col, Container, Image, Jumbotron, Row } from "react-bootstrap";
 import Head from "next/head";
 import Project from "../components/Project";
 
+function language(name: string, img: string): JSX.Element {
+    return (
+        <li className="list-inline-item">
+            <img src={`/img/languages/${img}`} alt={name} />
+        </li>
+    );
+}
+
 export default function Page() {
     return (
         <>
@@ -29,14 +37,14 @@ export default function Page() {
                             <p>
                                 I am well versed in many different programming languages and technologies:
                             </p>
-                            <div className="languages">
-                                <img src="/img/languages/CSharp.svg" alt="C#" />
-                                <img src="/img/languages/HTML5.svg" alt="HTML 5" />
-                                <img src="/img/languages/JavaScript.svg" alt="JavaScript" />
-                                <img src="/img/languages/NodeJS.svg" alt="Node.js" />
-                                <img src="/img/languages/ReactJS.svg" alt="React.js" />
-                                <img src="/img/languages/TypeScript.svg" alt="TypeScript" />
-                            </div>
+                            <ul className="languages list-inline">
+                                {language("C#", "CSharp.svg")}
+                                {language("HTML5", "HTML5.svg")}
+                                {language("JavaScript", "JavaScript.svg")}
+                                {language("Node.js", "NodeJS.svg")}
+                                {language("React.js", "ReactJS.svg")}
+                                {language("TypeScript", "TypeScript.svg")}
+                            </ul>
                         </Col>
                     </Row>
                     <Row className="border">
