@@ -76,6 +76,29 @@ export default function Page() {
                             <h1>Portfolio</h1>
                             <hr />
                             <Project
+                                name="iDecryptIt Website"
+                                imgSrc="/img/thumbs/iDecryptItWeb.png"
+                                imgAlt="A page from the iDecryptIt website"
+                                buttons={[
+                                    {
+                                        href: "https://idecryptit.com/",
+                                        text: "Visit",
+                                        icon: "link-45deg"
+                                    },
+                                    {
+                                        href: "https://github.com/colejohnson66/idecryptit-web",
+                                        text: "GitHub",
+                                        icon: "github"
+                                    }
+                                ]}>
+                                <p>
+                                    Currently a work in progress, this website is designed to replace the iDecryptIt program.
+                                    I created this website to show what goes on inside an iDevice's update file.
+                                    There are plans for this website to go in depth about every file inside an iDevice's firmware.
+                                </p>
+                            </Project>
+                            <hr />
+                            <Project
                                 name="iDecryptIt"
                                 imgSrc="/img/thumbs/iDecryptIt.png"
                                 imgAlt="iDecryptIt"
@@ -161,29 +184,6 @@ export default function Page() {
                                     My team and I created this game to learn and develop our skills with React.js and MongoDB.
                                     I played a big part in this project by writing the majority of the JavaScript which gave me confidence to create more projects using React.js.
                                     I am proud of this project because it gave me skills to create more web based apps or games.
-                                </p>
-                            </Project>
-                            <hr />
-                            <Project
-                                name="iDecryptIt Website"
-                                imgSrc="/img/thumbs/iDecryptItWeb.png"
-                                imgAlt="A page from the iDecryptIt website"
-                                buttons={[
-                                    {
-                                        href: "https://idecryptit.com/",
-                                        text: "Visit",
-                                        icon: "link-45deg"
-                                    },
-                                    {
-                                        href: "https://github.com/colejohnson66/idecryptit-web",
-                                        text: "GitHub",
-                                        icon: "github"
-                                    }
-                                ]}>
-                                <p>
-                                    Currently a work in progress, this website is designed to replace the iDecryptIt program.
-                                    I created this website to show what goes on inside an iDevice's update file.
-                                    There are plans for this website to go in depth about every file inside an iDevice's firmware.
                                 </p>
                             </Project>
                         </Col>
