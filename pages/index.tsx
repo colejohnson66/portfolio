@@ -27,8 +27,16 @@ export default function Page() {
                                 I am a full stack web developer with over a decade of programming experience.
                             </p>
                             <p>
-                                I am well versed in many different programming languages and technologies.
+                                I am well versed in many different programming languages and technologies:
                             </p>
+                            <div className="languages">
+                                <img src="/img/languages/CSharp.svg" alt="C#" />
+                                <img src="/img/languages/HTML5.svg" alt="HTML 5" />
+                                <img src="/img/languages/JavaScript.svg" alt="JavaScript" />
+                                <img src="/img/languages/NodeJS.svg" alt="Node.js" />
+                                <img src="/img/languages/ReactJS.svg" alt="React.js" />
+                                <img src="/img/languages/TypeScript.svg" alt="TypeScript" />
+                            </div>
                         </Col>
                     </Row>
                     <Row className="border">
@@ -69,7 +77,7 @@ export default function Page() {
                             <hr />
                             <Project
                                 name="iDecryptIt"
-                                imgSrc="/img/iDecryptIt.png"
+                                imgSrc="/img/thumbs/iDecryptIt.png"
                                 imgAlt="iDecryptIt"
                                 buttons={[
                                     {
@@ -92,7 +100,7 @@ export default function Page() {
                             <hr />
                             <Project
                                 name="Mission Nutrition"
-                                imgSrc="/img/MissionNutrition.png"
+                                imgSrc="/img/thumbs/MissionNutrition.png"
                                 imgAlt="Mission Nutrition"
                                 buttons={[
                                     {
@@ -115,7 +123,7 @@ export default function Page() {
                             <hr />
                             <Project
                                 name="CrazyTalk"
-                                imgSrc="/img/CrazyTalk.png"
+                                imgSrc="/img/thumbs/CrazyTalk.png"
                                 imgAlt="CrazyTalk"
                                 buttons={[
                                     {
@@ -139,7 +147,7 @@ export default function Page() {
                             <hr />
                             <Project
                                 name="Call of Fathoovu"
-                                imgSrc="/img/CallOfFathoovu.png"
+                                imgSrc="/img/thumbs/CallOfFathoovu.png"
                                 imgAlt="Call of Fathoovu"
                                 buttons={[
                                     {
@@ -158,7 +166,7 @@ export default function Page() {
                             <hr />
                             <Project
                                 name="iDecryptIt Website"
-                                imgSrc="/img/iDecryptItWeb.png"
+                                imgSrc="/img/thumbs/iDecryptItWeb.png"
                                 imgAlt="A page from the iDecryptIt website"
                                 buttons={[
                                     {
