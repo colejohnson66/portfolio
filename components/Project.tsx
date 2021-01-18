@@ -14,6 +14,7 @@ type ProjectProps = {
     imgAlt: string;
     children: JSX.Element | JSX.Element[];
     buttons: ProjectButton[];
+    technologies?: string[];
 };
 
 function Project(props: ProjectProps): JSX.Element {
@@ -43,6 +44,15 @@ function Project(props: ProjectProps): JSX.Element {
                         );
                     })}
                 </div>
+                {props.technologies &&
+                    <div className="technologies text-muted">
+                        Technologies: {props.technologies.map((technology, idx) => (
+                        <React.Fragment key={idx}>
+                            {technology}
+                            {idx !== props.technologies.length - 1 && ", "}
+                        </React.Fragment>
+                    ))}
+                    </div>}
             </Media.Body>
         </Media>
     );

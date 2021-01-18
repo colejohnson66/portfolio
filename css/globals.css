@@ -43,6 +43,12 @@
   margin-right: 0.5em;
 }
 
+.project .technologies {
+  margin-top: 16px;
+  font-size: small;
+}
+
 footer {
   margin-top: 20px;
+  font-size: small;
 }

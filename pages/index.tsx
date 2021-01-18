@@ -87,6 +87,7 @@ export default function Page() {
                                 name="iDecryptIt Website"
                                 imgSrc="/img/thumbs/iDecryptItWeb.png"
                                 imgAlt="A page from the iDecryptIt website"
+                                technologies={["Node.js", "React.js", "Next.js", "TypeScript"]}
                                 buttons={[
                                     {
                                         href: "https://idecryptit.com/",
@@ -113,6 +114,7 @@ export default function Page() {
                                 name="80x86"
                                 imgSrc="/img/thumbs/80x86.png"
                                 imgAlt="A page from the 80x86 website"
+                                technologies={["Node.js", "React.js", "Next.js", "TypeScript"]}
                                 buttons={[
                                     {
                                         href: "https://80x86.dev/",
@@ -137,6 +139,7 @@ export default function Page() {
                                 name="iDecryptIt"
                                 imgSrc="/img/thumbs/iDecryptIt.png"
                                 imgAlt="iDecryptIt"
+                                technologies={["C#", ".NET", "WPF"]}
                                 buttons={[
                                     {
                                         href: "https://sourceforge.net/projects/idecryptit/",
@@ -183,6 +186,7 @@ export default function Page() {
                                 name="CrazyTalk"
                                 imgSrc="/img/thumbs/CrazyTalk.png"
                                 imgAlt="CrazyTalk"
+                                technologies={["Node.js", "Handlebars.js", "MySQL", "Heroku"]}
                                 buttons={[
                                     {
                                         href: "https://crazytalk-launch-this.herokuapp.com/",
@@ -207,6 +211,7 @@ export default function Page() {
                                 name="Call of Fathoovu"
                                 imgSrc="/img/thumbs/CallOfFathoovu.png"
                                 imgAlt="Call of Fathoovu"
+                                technologies={["Node.js", "React.js", "MongoDB"]}
                                 buttons={[
                                     {
                                         href: "https://github.com/colejohnson66/call-of-fathoovu",
@@ -227,7 +232,7 @@ export default function Page() {
             </main>
             <hr />
             <footer>
-                <Container className="small-print">
+                <Container>
                     <p>
                         Website copyright &copy; Cole Johnson 2021.
                     </p>
