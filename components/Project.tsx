@@ -19,12 +19,14 @@ type ProjectProps = {
 function Project(props: ProjectProps): JSX.Element {
     return (
         <Media className="project">
-            <Image
-                className="image"
-                width={400}
-                src={props.imgSrc}
-                alt={props.imgAlt}
-                rounded />
+            <a href={props.imgSrc}>
+                <Image
+                    className="image"
+                    width={400}
+                    src={props.imgSrc}
+                    alt={props.imgAlt}
+                    rounded />
+            </a>
             <Media.Body>
                 <h2>{props.name}</h2>
                 {props.children}
