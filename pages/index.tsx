@@ -3,6 +3,7 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 import Footer from "../components/Footer";
 import Head from "next/head";
 import Header from "../components/Header";
+import Link from "next/link";
 import Project from "../components/Project";
 
 function language(name: string, img: string): JSX.Element {
@@ -45,6 +46,9 @@ export default function Page() {
                             <p>
                                 I am a full stack web developer with over a decade of programming experience.
                             </p>
+                            {/*<p>
+                                <Link href="/resume"><a>View my resume.</a></Link>
+                            </p>*/}
                             <p>
                                 I am well versed in many different programming languages and technologies:
                             </p>

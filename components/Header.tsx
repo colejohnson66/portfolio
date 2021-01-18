@@ -1,4 +1,4 @@
-import { Image, Jumbotron } from "react-bootstrap";
+import { Image, Jumbotron, Nav } from "react-bootstrap";
 
 import React from "react";
 
