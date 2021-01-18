@@ -15,6 +15,12 @@ export default function Page() {
     return (
         <>
             <Head>
+                <meta name="viewport" content="min-width=640" />
+                <meta name="description" content="Portfolio for Cole Johnson - A Full Stack Web Developer on Long Island, NY" />
+                <link ref="canonical" href="https://colejohnson66.com" />
+                <link ref="me" href="https://github.com/colejohnson66" />
+                <link ref="me" href="https://www.linkedin.com/in/colejohnson66/" />
+                <link ref="me" href="mailto:coleharrisjohnson@gmail.com" />
                 <title>Cole Johnson - Full Stack Web Developer</title>
             </Head>
             <header>
@@ -58,19 +64,24 @@ export default function Page() {
                                     <Col>
                                         <h3>Around the Web</h3>
                                         <div className="aroundTheWeb">
+                                            <a href="mailto:coleharrisjohnson@gmail.com">
+                                                <Button variant="dark">
+                                                    <i className="bi bi-envelope-fill" />
+                                                </Button>
+                                            </a>
                                             <a href="https://github.com/colejohnson66">
                                                 <Button variant="dark">
                                                     <i className="bi bi-github" />
                                                 </Button>
                                             </a>
-                                            <a href="https://stackoverflow.com/users/1350209">
-                                                <Button variant="dark">
-                                                    Stack Overflow
-                                                </Button>
-                                            </a>
                                             <a href="https://www.linkedin.com/in/colejohnson66/">
                                                 <Button variant="dark">
                                                     <i className="bi bi-linkedin" />
+                                                </Button>
+                                            </a>
+                                            <a href="https://stackoverflow.com/users/1350209">
+                                                <Button variant="dark">
+                                                    Stack Overflow
                                                 </Button>
                                             </a>
                                         </div>
