@@ -21,7 +21,7 @@ function Project(props: ProjectProps): JSX.Element {
         <Media className="project">
             <Image
                 className="image"
-                width={300}
+                width={400}
                 src={props.imgSrc}
                 alt={props.imgAlt}
                 rounded />
