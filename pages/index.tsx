@@ -1,6 +1,8 @@
-import { Button, Col, Container, Image, Jumbotron, Row } from "react-bootstrap";
+import { Button, Col, Container, Row } from "react-bootstrap";
 
+import Footer from "../components/Footer";
 import Head from "next/head";
+import Header from "../components/Header";
 import Project from "../components/Project";
 
 function language(name: string, img: string): JSX.Element {
@@ -8,6 +10,16 @@ function language(name: string, img: string): JSX.Element {
         <li className="list-inline-item">
             <img src={`/img/languages/${img}`} alt={name} />
         </li>
+    );
+}
+
+function aroundTheWeb(href: string, content: JSX.Element | string): JSX.Element {
+    return (
+        <a href={href}>
+            <Button variant="dark">
+                {content}
+            </Button>
+        </a>
     );
 }
 
@@ -23,14 +35,7 @@ export default function Page() {
                 <link ref="me" href="mailto:coleharrisjohnson@gmail.com" />
                 <title>Cole Johnson - Full Stack Web Developer</title>
             </Head>
-            <header>
-                <Jumbotron id="jumbo" className="text-center">
-                    <Image src="/img/me.png" roundedCircle />
-                    <h1>Cole Johnson</h1>
-                    <hr />
-                    <h3>Full Stack Web Developer</h3>
-                </Jumbotron>
-            </header>
+            <Header />
             <main>
                 <Container>
                     <Row>
@@ -64,26 +69,10 @@ export default function Page() {
                                     <Col>
                                         <h3>Around the Web</h3>
                                         <div className="aroundTheWeb">
-                                            <a href="mailto:coleharrisjohnson@gmail.com">
-                                                <Button variant="dark">
-                                                    <i className="bi bi-envelope-fill" />
-                                                </Button>
-                                            </a>
-                                            <a href="https://github.com/colejohnson66">
-                                                <Button variant="dark">
-                                                    <i className="bi bi-github" />
-                                                </Button>
-                                            </a>
-                                            <a href="https://www.linkedin.com/in/colejohnson66/">
-                                                <Button variant="dark">
-                                                    <i className="bi bi-linkedin" />
-                                                </Button>
-                                            </a>
-                                            <a href="https://stackoverflow.com/users/1350209">
-                                                <Button variant="dark">
-                                                    Stack Overflow
-                                                </Button>
-                                            </a>
+                                            {aroundTheWeb("mailto:coleharrisjohnson@gmail.com", <i className="bi bi-envelope-fill" />)}
+                                            {aroundTheWeb("https://github.com/colejohnson66", <i className="bi bi-github" />)}
+                                            {aroundTheWeb("https://www.linkedin.com/in/colejohnson66/", <i className="bi bi-linkedin" />)}
+                                            {aroundTheWeb("https://stackoverflow.com/users/1350209", "Stack Overflow")}
                                         </div>
                                     </Col>
                                 </Row>
@@ -241,14 +230,7 @@ export default function Page() {
                     </Row>
                 </Container>
             </main>
-            <hr />
-            <footer>
-                <Container>
-                    <p>
-                        Website copyright &copy; Cole Johnson 2021.
-                    </p>
-                </Container>
-            </footer>
+            <Footer />
         </>
     );
 }
