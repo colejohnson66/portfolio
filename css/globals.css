@@ -19,10 +19,10 @@
   filter: none;
 }*/
 
-.aroundTheWeb a {
+.buttonList a {
   margin-right: 0.5em;
 }
-.aroundTheWeb a:last-child {
+.buttonList a:last-child {
   margin-right: 0;
 }
 

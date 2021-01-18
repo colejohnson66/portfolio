@@ -14,7 +14,19 @@ function language(name: string, img: string): JSX.Element {
     );
 }
 
-function aroundTheWeb(href: string, content: JSX.Element | string): JSX.Element {
+function linkButton(href: string, content: JSX.Element | string, useNextLink = false): JSX.Element {
+    if (useNextLink) {
+        return (
+            <Link href={href}>
+                <a>
+                    <Button variant="dark">
+                        {content}
+                    </Button>
+                </a>
+            </Link>
+        )
+    }
+
     return (
         <a href={href}>
             <Button variant="dark">
@@ -39,6 +51,15 @@ export default function Page() {
             <Header />
             <main>
                 <Container>
+                    <Row>
+                        <Col className="text-center">
+                            <div className="buttonList">
+                                {linkButton("#headerInfo", "Info")}
+                                {linkButton("#headerPortfolio", "Portfolio")}
+                                {linkButton("#headerCertifications", "Certifications")}
+                            </div>
+                        </Col>
+                    </Row>
                     <Row>
                         <Col>
                             <h1>About Me</h1>
@@ -65,18 +86,18 @@ export default function Page() {
                     <Row className="border">
                         <Col>
                             <Container fluid className="text-center">
-                                <Row>
+                                <Row id="headerInfo">
                                     <Col>
                                         <h3>Location</h3>
                                         <p>Long Island, NY, USA</p>
                                     </Col>
                                     <Col>
                                         <h3>Around the Web</h3>
-                                        <div className="aroundTheWeb">
-                                            {aroundTheWeb("mailto:coleharrisjohnson@gmail.com", <i className="bi bi-envelope-fill" />)}
-                                            {aroundTheWeb("https://github.com/colejohnson66", <i className="bi bi-github" />)}
-                                            {aroundTheWeb("https://www.linkedin.com/in/colejohnson66/", <i className="bi bi-linkedin" />)}
-                                            {aroundTheWeb("https://stackoverflow.com/users/1350209", "Stack Overflow")}
+                                        <div className="buttonList">
+                                            {linkButton("mailto:coleharrisjohnson@gmail.com", <i className="bi bi-envelope-fill" />)}
+                                            {linkButton("https://github.com/colejohnson66", <i className="bi bi-github" />)}
+                                            {linkButton("https://www.linkedin.com/in/colejohnson66/", <i className="bi bi-linkedin" />)}
+                                            {linkButton("https://stackoverflow.com/users/1350209", "Stack Overflow")}
                                         </div>
                                     </Col>
                                 </Row>
@@ -85,7 +106,7 @@ export default function Page() {
                     </Row>
                     <Row>
                         <Col>
-                            <h1>Portfolio</h1>
+                            <h1 id="headerPortfolio">Portfolio</h1>
                             <hr />
                             <Project
                                 name="iDecryptIt Website"
@@ -230,6 +251,17 @@ export default function Page() {
                                     I am proud of this project because it gave me skills to create more web based apps or games.
                                 </p>
                             </Project>
+                            <hr />
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <h1 id="headerCertifications">Certifications</h1>
+                            <hr />
+                            <ul>
+                                <li><b>MTA: Software Development Fundamentals (98-361)</b> (October 2020)</li>
+                                <li><b>Triplebyte: Generalist</b> (March 2020)</li>
+                            </ul>
                         </Col>
                     </Row>
                 </Container>
