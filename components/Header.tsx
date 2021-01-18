@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Header(): JSX.Element {
     return (
-        <header>
+        <header id="top">
             <Jumbotron id="jumbo" className="text-center">
                 <Image src="/img/me.png" roundedCircle />
                 <h1>Cole Johnson</h1>
