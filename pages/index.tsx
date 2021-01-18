@@ -96,6 +96,33 @@ export default function Page() {
                                     I created this website to show what goes on inside an iDevice's update file.
                                     There are plans for this website to go in depth about every file inside an iDevice's firmware.
                                 </p>
+                                <p>
+                                    The image to the side shows the page for the <a href="https://idecryptit.com/file/format/img3/kbag">IMG3 <code>KBAG</code> tag</a>.
+                                </p>
+                            </Project>
+                            <hr />
+                            <Project
+                                name="80x86"
+                                imgSrc="/img/thumbs/80x86.png"
+                                imgAlt="A page from the 80x86 website"
+                                buttons={[
+                                    {
+                                        href: "https://80x86.dev/",
+                                        text: "Visit",
+                                        icon: "link-45deg"
+                                    },
+                                    {
+                                        href: "https://github.com/colejohnson66/80x86",
+                                        text: "GitHub",
+                                        icon: "github"
+                                    }
+                                ]}>
+                                <p>
+                                    Currently a work in progress, this website is designed to be a digital reference of the x86 (and x86-64) architecture.
+                                </p>
+                                <p>
+                                    The image to the side shows the page for the <a href="https://80x86.dev/instruction/aam"><code>AAM</code> instruction</a>.
+                                </p>
                             </Project>
                             <hr />
                             <Project
