@@ -83,25 +83,19 @@ export default function Page() {
                             </ul>
                         </Col>
                     </Row>
-                    <Row className="border">
+                    <Row className="border text-center" id="headerInfo">
                         <Col>
-                            <Container fluid className="text-center">
-                                <Row id="headerInfo">
-                                    <Col>
-                                        <h3>Location</h3>
-                                        <p>Long Island, NY, USA</p>
-                                    </Col>
-                                    <Col>
-                                        <h3>Around the Web</h3>
-                                        <div className="buttonList">
-                                            {linkButton("mailto:coleharrisjohnson@gmail.com", <i className="bi bi-envelope-fill" />)}
-                                            {linkButton("https://github.com/colejohnson66", <i className="bi bi-github" />)}
-                                            {linkButton("https://www.linkedin.com/in/colejohnson66/", <i className="bi bi-linkedin" />)}
-                                            {linkButton("https://stackoverflow.com/users/1350209", "Stack Overflow")}
-                                        </div>
-                                    </Col>
-                                </Row>
-                            </Container>
+                            <h3>Location</h3>
+                            <p>Long Island, NY, USA</p>
+                        </Col>
+                        <Col>
+                            <h3>Around the Web</h3>
+                            <div className="buttonList">
+                                {linkButton("mailto:coleharrisjohnson@gmail.com", <i className="bi bi-envelope-fill" />)}
+                                {linkButton("https://github.com/colejohnson66", <i className="bi bi-github" />)}
+                                {linkButton("https://www.linkedin.com/in/colejohnson66/", <i className="bi bi-linkedin" />)}
+                                {linkButton("https://stackoverflow.com/users/1350209", "Stack Overflow")}
+                            </div>
                         </Col>
                     </Row>
                     <Row>
