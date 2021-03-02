@@ -103,6 +103,31 @@ export default function Page() {
                             <h1 id="headerPortfolio">Portfolio</h1>
                             <hr />
                             <Project
+                                name="80x86"
+                                imgSrc="/img/thumbs/80x86.png"
+                                imgAlt="A page from the 80x86 website"
+                                technologies={["Node.js", "React.js", "Next.js", "TypeScript"]}
+                                buttons={[
+                                    {
+                                        href: "https://80x86.dev/",
+                                        text: "Visit",
+                                        icon: "link-45deg"
+                                    },
+                                    {
+                                        href: "https://github.com/colejohnson66/80x86",
+                                        text: "GitHub",
+                                        icon: "github"
+                                    }
+                                ]}>
+                                <p>
+                                    Currently a work in progress, this website is designed to be a digital reference of the x86 (and x86-64) architecture.
+                                </p>
+                                <p>
+                                    The image to the side shows the page for the <a href="https://80x86.dev/instruction/aam"><code>AAM</code> instruction</a>.
+                                </p>
+                            </Project>
+                            <hr />
+                            <Project
                                 name="iDecryptIt Website"
                                 imgSrc="/img/thumbs/iDecryptItWeb.png"
                                 imgAlt="A page from the iDecryptIt website"
@@ -126,31 +151,6 @@ export default function Page() {
                                 </p>
                                 <p>
                                     The image to the side shows the page for the <a href="https://idecryptit.com/file/format/img3/kbag">IMG3 <code>KBAG</code> tag</a>.
-                                </p>
-                            </Project>
-                            <hr />
-                            <Project
-                                name="80x86"
-                                imgSrc="/img/thumbs/80x86.png"
-                                imgAlt="A page from the 80x86 website"
-                                technologies={["Node.js", "React.js", "Next.js", "TypeScript"]}
-                                buttons={[
-                                    {
-                                        href: "https://80x86.dev/",
-                                        text: "Visit",
-                                        icon: "link-45deg"
-                                    },
-                                    {
-                                        href: "https://github.com/colejohnson66/80x86",
-                                        text: "GitHub",
-                                        icon: "github"
-                                    }
-                                ]}>
-                                <p>
-                                    Currently a work in progress, this website is designed to be a digital reference of the x86 (and x86-64) architecture.
-                                </p>
-                                <p>
-                                    The image to the side shows the page for the <a href="https://80x86.dev/instruction/aam"><code>AAM</code> instruction</a>.
                                 </p>
                             </Project>
                             <hr />
