@@ -1,4 +1,4 @@
-import { Image, Jumbotron, Nav } from "react-bootstrap";
+import { Image, Jumbotron } from "react-bootstrap";
 
 import React from "react";
 
@@ -7,9 +7,9 @@ export default function Header(): JSX.Element {
         <header id="top">
             <Jumbotron id="jumbo" className="text-center">
                 <Image src="/img/me.png" roundedCircle />
-                <h1>Cole Johnson</h1>
+                <h1>Cole Tobin</h1>
                 <hr />
-                <h3>Full Stack Web Developer</h3>
+                <h3>Software Engineer</h3>
             </Jumbotron>
         </header>
     );

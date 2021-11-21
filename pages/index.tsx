@@ -41,12 +41,12 @@ export default function Page() {
         <>
             <Head>
                 <meta name="viewport" content="min-width=640" />
-                <meta name="description" content="Portfolio for Cole Johnson - A Full Stack Web Developer on Long Island, NY" />
+                <meta name="description" content="Portfolio for Cole Tobin - A Full Stack Web Developer on Long Island, NY" />
                 <link ref="canonical" href="https://colejohnson66.com" />
                 <link ref="me" href="https://github.com/colejohnson66" />
                 <link ref="me" href="https://www.linkedin.com/in/colejohnson66/" />
                 <link ref="me" href="mailto:coleharrisjohnson@gmail.com" />
-                <title>Cole Johnson - Full Stack Web Developer</title>
+                <title>Cole Tobin - Full Stack Web Developer</title>
             </Head>
             <Header />
             <main>
@@ -222,7 +222,7 @@ export default function Page() {
                                     CrazyTalk is an 80s themed Mad Libs inspired game.
                                     My team and I created this game to assist us in learning Node.js, Handlebars.js, MySQL, and Heroku.
                                     The knowledge gained from this project gives me confidence to be able to tackle much larger database projects.
-                                My professor's quote in regards to the <a href="https://github.com/MadamOcelot/CrazyTalk/blob/master/helpers.js">parsing code</a> was, "It's almost as if you wrote a mini compiler. Great job!"
+                                    My professor's quote in regards to the <a href="https://github.com/MadamOcelot/CrazyTalk/blob/master/helpers.js">parsing code</a> was, "It's almost as if you wrote a mini compiler. Great job!"
                                 </p>
                             </Project>
                             <hr />
