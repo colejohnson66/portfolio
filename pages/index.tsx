@@ -106,7 +106,7 @@ export default function Page() {
                                 name="Arch86"
                                 imgSrc="/img/thumbs/Arch86.png"
                                 imgAlt="A page from the Arch86 website"
-                                technologies={["x86 assembly", "Node.js", "React.js", "Next.js", "TypeScript"]}
+                                technologies={["x86 assembly", "Node.js", "React.js", "Next.js", "TypeScript", "Tailwind CSS"]}
                                 buttons={[
                                     {
                                         href: "https://arch86.com/",
@@ -121,6 +121,7 @@ export default function Page() {
                                 ]}>
                                 <p>
                                     Currently a work in progress, this website is designed to be a digital reference of the x86 (and x86-64) architecture.
+                                    The entire theme is custom built using Tailwind CSS.
                                 </p>
                                 <p>
                                     The image to the side shows the page for the <a href="https://arch86.com/instruction/aam"><code>AAM</code> instruction</a>.
