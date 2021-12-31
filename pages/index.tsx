@@ -189,7 +189,7 @@ export default function Page() {
                                         icon: "link-45deg"
                                     },
                                     {
-                                        href: "https://ithub.com/colejohnson66/MissionNutrition",
+                                        href: "https://github.com/colejohnson66/MissionNutrition",
                                         text: "GitHub",
                                         icon: "github"
                                     }
