@@ -27,7 +27,7 @@ function Project(props: ProjectProps): JSX.Element {
                     alt={props.imgAlt}
                     src={props.imgSrc} />
             </A>
-            <h2>{props.name}</h2>
+            <h2 className="border-0">{props.name}</h2>
             {props.children}
             <div className="text-center my-4">
                 {props.buttons.map((button, idx) => (
