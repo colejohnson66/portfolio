@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "description": "My portfolio website",
-  "author": "Cole Johnson <coleharrisjohnson@gmail.com>",
+  "author": "Cole Tobin <coleharrisjohnson@gmail.com>",
   "license": "AGPL-3.0-or-later",
   "private": true,
   "repository": {
@@ -15,18 +15,17 @@
     "start": "next start"
   },
   "dependencies": {
-    "bootstrap": "4.6.0",
-    "bootstrap-icons": "^1.5.0",
-    "next": "12.0.4",
-    "react": "17.0.2",
-    "react-bootstrap": "^1.6.0",
-    "react-dom": "17.0.2"
+    "next": "12.1.5",
+    "react": "18.0.0",
+    "react-dom": "18.0.0"
   },
   "devDependencies": {
-    "@types/bootstrap": "4.6.0",
-    "@types/node": "^16.7.1",
-    "@types/react": "^17.0.19",
-    "@types/react-dom": "^17.0.9",
+    "@types/node": "^17.0.15",
+    "@types/react": "^18.0.6",
+    "@types/react-dom": "^18.0.2",
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.6",
+    "tailwindcss": "^3.0.18",
     "typescript": "^4.3.5"
   }
 }
