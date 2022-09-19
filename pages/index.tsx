@@ -1,5 +1,9 @@
+// copyright (c) 2021-2022 Cole Tobin
+// all rights reserved
+
+import { ArrowDownTrayIcon, CodeBracketIcon, EnvelopeIcon, LinkIcon } from "@heroicons/react/20/solid"
+
 import A from "@components/A";
-import Clear from "@components/Clear";
 import Head from "next/head";
 import Layout from "@components/Layout";
 import Project from "@components/Project";
@@ -20,6 +24,7 @@ export default function Page() {
                 <meta name="description" content="Portfolio for Cole Tobin - A Software Engineer on Long Island, NY" />
                 <link ref="canonical" href="https://coletobin.com" />
                 <link ref="me" href="https://github.com/colejohnson66" />
+                <link rel="me" href="https://stackoverflow.com/users/1350209/cole-tobin" />
                 <link ref="me" href="https://www.linkedin.com/in/colejohnson66/" />
                 <link ref="me" href="mailto:coleharrisjohnson@gmail.com" />
                 <title>Cole Tobin - Software Engineer</title>
@@ -53,7 +58,7 @@ export default function Page() {
                             {LinkButton("mailto:coleharrisjohnson@gmail.com", <i className="bi bi-envelope-fill" />)}
                             {LinkButton("https://github.com/colejohnson66", <i className="bi bi-github" />)}
                             {LinkButton("https://www.linkedin.com/in/colejohnson66/", <i className="bi bi-linkedin" />)}
-                            {LinkButton("https://stackoverflow.com/users/1350209", "Stack Overflow")}
+                            {LinkButton("https://stackoverflow.com/users/1350209/cole-tobin", "Stack Overflow")}
                         </div> */}
 
                         <h2>Portfolio</h2>
@@ -61,17 +66,17 @@ export default function Page() {
                             name="iDecryptIt"
                             imgSrc="/img/thumbs/iDecryptIt.png"
                             imgAlt="iDecryptIt"
-                            technologies={["C#", ".NET", "WPF"]}
+                            technologies={["C#", ".NET", "WPF", "Avalonia"]}
                             buttons={[
                                 {
                                     href: "https://sourceforge.net/projects/idecryptit/",
                                     text: "Download",
-                                    icon: "download"
+                                    icon: <ArrowDownTrayIcon />,
                                 },
                                 {
                                     href: "https://github.com/colejohnson66/iDecryptIt",
                                     text: "GitHub",
-                                    icon: "github"
+                                    icon: <CodeBracketIcon />,
                                 }
                             ]}>
                             <p>
@@ -92,12 +97,12 @@ export default function Page() {
                                 {
                                     href: "https://arch86.com/",
                                     text: "Visit",
-                                    icon: "link-45deg"
+                                    icon: <LinkIcon />,
                                 },
                                 {
                                     href: "https://github.com/colejohnson66/Arch86",
                                     text: "GitHub",
-                                    icon: "github"
+                                    icon: <CodeBracketIcon />,
                                 }
                             ]}>
                             <p>
@@ -117,12 +122,12 @@ export default function Page() {
                                 {
                                     href: "https://ifirmware.dev/",
                                     text: "Visit",
-                                    icon: "link-45deg"
+                                    icon: <LinkIcon />,
                                 },
                                 {
                                     href: "https://github.com/colejohnson66/iFirmware",
                                     text: "GitHub",
-                                    icon: "github"
+                                    icon: <CodeBracketIcon />,
                                 }
                             ]}>
                             <p>
@@ -130,7 +135,7 @@ export default function Page() {
                                 The entire theme is custom built using Tailwind CSS.
                             </p>
                             <p>
-                                The image to the side shows <A href="https://ifirmware.dev/fw/format/img3/kbag">a page containing a custom hex display</A> I wrote.
+                                The image to the side shows a page containing <A href="https://ifirmware.dev/fw/format/tags/kbag">a custom hex display</A> I wrote.
                             </p>
                         </Project>
                         {/* <Project
@@ -141,12 +146,12 @@ export default function Page() {
                                 {
                                     href: "https://creamdreamextremeteam.github.io/MissionNutrition/",
                                     text: "Visit",
-                                    icon: "link-45deg"
+                                    icon: <LinkIcon />,
                                 },
                                 {
                                     href: "https://github.com/colejohnson66/MissionNutrition",
                                     text: "GitHub",
-                                    icon: "github"
+                                    icon: <CodeBracketIcon />,
                                 }
                             ]}>
                             <p>
@@ -164,12 +169,12 @@ export default function Page() {
                                 {
                                     href: "https://crazytalk-launch-this.herokuapp.com/",
                                     text: "Play",
-                                    icon: "joystick"
+                                    icon: <PuzzlePieceIcon />,
                                 },
                                 {
                                     href: "https://github.com/MadamOcelot/CrazyTalk",
                                     text: "GitHub",
-                                    icon: "github"
+                                    icon: <CodeBracketIcon />,
                                 }
                             ]}>
                             <p>
@@ -188,7 +193,7 @@ export default function Page() {
                                 {
                                     href: "https://github.com/colejohnson66/call-of-fathoovu",
                                     text: "GitHub",
-                                    icon: "github"
+                                    icon: <CodeBracketIcon />,
                                 }
                             ]}>
                             <p>
@@ -200,20 +205,6 @@ export default function Page() {
                     </div>
                 </Layout.Content>
             </Layout.Root>
-            {/* <Container>
-                    <Row>
-                        <Col>
-                            <h1 id="headerCertifications">Certifications</h1>
-                            <hr />
-                            <ul>
-                                <li><b>MTA: Software Development Fundamentals (98-361)</b> (October 2020)</li>
-                                <li><b>Triplebyte: Generalist</b> (March 2020)</li>
-                            </ul>
-                        </Col>
-                    </Row>
-                </Container>
-            </main>
-            <Footer /> */}
         </>
     );
 }

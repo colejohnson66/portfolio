@@ -1,3 +1,6 @@
+// copyright (c) 2022 Cole Tobin
+// all rights reserved
+
 import Head from "next/head";
 
 type LayoutRoot404Props = {

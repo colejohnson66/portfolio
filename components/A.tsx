@@ -1,3 +1,6 @@
+// copyright (c) 2022 Cole Tobin
+// all rights reserved
+
 import Link from "next/link";
 import React from "react";
 
