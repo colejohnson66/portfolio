@@ -1,4 +1,4 @@
-// copyright (c) 2021-2022 Cole Tobin
+// copyright (c) 2021-2023 Cole Tobin
 // all rights reserved
 
 import { ArrowDownTrayIcon, CodeBracketIcon, EnvelopeIcon, LinkIcon } from "@heroicons/react/20/solid"
@@ -43,13 +43,11 @@ export default function Page() {
                             I am a programmer with a passion for building software.
                         </p>
                         <p>
-                            I am well versed in many different programming languages and technologies:
+                            I am well versed in many different programming languages and technologies, but I mainly work with C# and TypeScript.
                         </p>
                         <ul className="list-none">
                             {Language("C#", "CSharp.svg")}
-                            {Language("HTML5", "HTML5.svg")}
-                            {Language("Node.js", "NodeJS.svg")}
-                            {Language("React.js", "ReactJS.svg")}
+                            {Language(".NET", "DotNET.svg")}
                             {Language("TypeScript", "TypeScript.svg")}
                         </ul>
 
@@ -66,7 +64,7 @@ export default function Page() {
                             name="iDecryptIt"
                             imgSrc="/img/thumbs/iDecryptIt.png"
                             imgAlt="iDecryptIt"
-                            technologies={["C#", ".NET", "WPF", "Avalonia"]}
+                            technologies={["C#", ".NET", "WPF", "Avalonia UI"]}
                             buttons={[
                                 {
                                     href: "https://sourceforge.net/projects/idecryptit/",
@@ -184,7 +182,7 @@ export default function Page() {
                                 My professor's quote in regards to the <a href="https://github.com/MadamOcelot/CrazyTalk/blob/master/helpers.js">parsing code</a> was, "It's almost as if you wrote a mini compiler. Great job!"
                             </p>
                         </Project> */}
-                        <Project
+                        {/* <Project
                             name="Call of Fathoovu"
                             imgSrc="/img/thumbs/CallOfFathoovu.png"
                             imgAlt="Call of Fathoovu"
@@ -201,7 +199,7 @@ export default function Page() {
                                 My team and I created this game to learn and develop our skills with React.js and MongoDB.
                                 I played a big part in this project by writing the majority of the JavaScript which gave me confidence to create more projects using React.js.
                             </p>
-                        </Project>
+                        </Project> */}
                     </div>
                 </Layout.Content>
             </Layout.Root>

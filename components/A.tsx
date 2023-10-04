@@ -17,8 +17,8 @@ export default function A(props: AProps): React.ReactElement {
     // local link?
     if (props.href[0] === "#") {
         return (
-            <Link href={props.href}>
-                <a className={classes.join(" ")}>{props.children}</a>
+            <Link className={classes.join(" ")} href={props.href}>
+                {props.children}
             </Link>
         );
     }
@@ -26,8 +26,8 @@ export default function A(props: AProps): React.ReactElement {
     // internal link? (internal links without slash are invalid)
     if (props.href[0] === "/") {
         return (
-            <Link href={props.href}>
-                <a className={classes.join(" ")}>{props.children}</a>
+            <Link className={classes.join(" ")} href={props.href}>
+                {props.children}
             </Link>
         );
     }

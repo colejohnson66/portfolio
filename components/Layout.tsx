@@ -1,4 +1,4 @@
-// copyright (c) 2022 Cole Tobin
+// copyright (c) 2022-2023 Cole Tobin
 // all rights reserved
 
 import Head from "next/head";
@@ -33,7 +33,7 @@ function LayoutRoot(props: LayoutRootProps | LayoutRoot404Props): React.ReactEle
                 <footer className="bg-white shadow flex-initial">
                     <div className="text-sm max-w-7xl mx-auto pt-6 pb-10 px-4 sm:px-6 lg:px-8">
                         <p>
-                            Website copyright &copy; Cole Tobin 2021-2022.
+                            Website copyright &copy; Cole Tobin 2021-2023.
                         </p>
                         <p>
                             View the source for this website on <a href="https://github.com/colejohnson66/portfolio">GitHub</a>.
