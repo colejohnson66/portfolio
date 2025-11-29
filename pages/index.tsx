@@ -1,10 +1,11 @@
 // copyright (c) 2021-2023 Cole Tobin
 // all rights reserved
 
-import { ArrowDownTrayIcon, CodeBracketIcon, EnvelopeIcon, LinkIcon } from "@heroicons/react/20/solid"
+import { ArrowDownTrayIcon, CodeBracketIcon, LinkIcon } from "@heroicons/react/20/solid"
 
 import A from "@components/A";
 import Head from "next/head";
+import { JSX } from "react";
 import Layout from "@components/Layout";
 import Project from "@components/Project";
 
@@ -22,11 +23,11 @@ export default function Page() {
             <Head>
                 <meta name="viewport" content="min-width=640" />
                 <meta name="description" content="Portfolio for Cole Tobin - A Software Engineer on Long Island, NY" />
-                <link ref="canonical" href="https://coletobin.com" />
-                <link ref="me" href="https://github.com/colejohnson66" />
+                <link rel="canonical" href="https://coletobin.com" />
+                <link rel="me" href="https://github.com/colejohnson66" />
                 <link rel="me" href="https://stackoverflow.com/users/1350209/cole-tobin" />
-                <link ref="me" href="https://www.linkedin.com/in/colejohnson66/" />
-                <link ref="me" href="mailto:coleharrisjohnson@gmail.com" />
+                <link rel="me" href="https://www.linkedin.com/in/colejohnson66/" />
+                <link rel="me" href="mailto:coleharrisjohnson@gmail.com" />
                 <title>Cole Tobin - Software Engineer</title>
             </Head>
             <Layout.Root pageTitle="Cole Tobin" canonical="/">

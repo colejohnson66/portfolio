@@ -2,7 +2,7 @@
 // all rights reserved
 
 import A from "./A";
-import React from "react";
+import { JSX } from "react";
 
 type ProjectButton = {
     href: string;
